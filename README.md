@@ -12,7 +12,7 @@ int main()
     char ch;
     y=10.26;
     ch='M';
-    //Yanlýs Atama
+    //Yanlis Atama
     int k,m,n;
     k=5;
     m=2+8;
@@ -22,11 +22,11 @@ int main()
     //***** 5/2=2 --> iki tamsayi isleminin sonucu tamsayidir
     //***** 5/2.0=2.5 --> sayilardan biri reel sayi ise sonuc reel sayidir
     //()--> -,+ (tekli/sagdan sola)--> *, /, %--> +, -(ikili/soldan saga)
-    //OPERAND(ÝSLENEN DEGER)
+    //OPERAND(ISLENEN DEGER)
     double delta_kok;
     int a=2,b=4,c=1;
     delta_kok=(b*b-4*a*c)/(2*a);
-    //NAME CONSTANTS(ÝSÝM SABÝTLERÝ)"#define"
+    //NAME CONSTANTS(ISIM SABITLERI)"#define"
     //sabitler degistirilemez
     #define PI 3.1415 //bu komutla, program icinde kullanilmis tum PI isimli sabitler
     //3.1415 ile degistirilir ve islemler buna gore yapilir
@@ -38,14 +38,14 @@ int main()
     pirim=maas*ORAN;
     printf("%d",pirim);
     ORAN=10;//YANLIS, bir sabit degistirilemez
-    //TYPE CASTÝNG(VERÝ TÝPÝ DONUSUMU)
+    //TYPE CASTING(VERI TIPI DONUSUMU)
     double r=0.5, p=5.2, s;
     int i=15, q=10, w;
     char ch;
     s=i/q;//15/10 ikisi de tamsayi fakat sonuc tamsayi olmaz, 1.0 olur
     w=r*p;//ikisi de reel sayi fakat w tamsayida tanimlandigi icin sonuc tamsayidir
     ch=5*i;//5*15 ASCII tablosuna gore K karakterine karsilik gelir
-    //DEFÝNED TYPE CASTÝNG(TANÝMLANAN VERÝ TÝPÝ DONUSUMU)
+    //DEFÝNED TYPE CASTÝNG(TANÝMLANAN VERI TIPI DONUSUMU)
     int sayi1,sayi2;
     double bolum;
     sayi1=2;
@@ -66,14 +66,14 @@ int main()
     //75 degerini yazdirir
     //%d isaretiyle belirlenen ve cikti listesinde bulunan degisken veya ifadelerin icerikleinin
     //format dizgisi icinde nerede gosterilecegini tanimlayan belirleyiciler
-    //PLACEHOLDER(YER BELÝRLEYÝCÝSÝ) olarak adlandirilir
+    //PLACEHOLDER(YER BELIRLEYICISI) olarak adlandirilir
     int a=10,b;
     b=a*2;
     printf("a=%d\n b=%d",a,b);
     /*
     %c --> character(karakter)
     %d --> integer(tamsayi)
-    %e --> scientific notation (bilisel gosterim)
+    %e --> scientific notation (bilimsel gosterim)
     %f %lf --> decimal,floating point(reel sayi)-->ondalik kismi 6 haneli olacak sekilde
     %g --> %e ve %f'den hangisi daha kisa ise onu kullanir
     %s --> string(dizgi)
