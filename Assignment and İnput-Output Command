@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
@@ -32,7 +33,7 @@ int main()
     //3.1415 ile degistirilir ve islemler buna gore yapilir
     //programin daha hizli calismasini saglar
     #define ORAN 5
-    int saat,maas,pirim;
+    int saat,maas,pirim,ORAN;
     saat=7;
     maas=saat*30+ORAN*10;
     pirim=maas*ORAN;
@@ -93,6 +94,47 @@ int main()
     int sayi=44;
     printf("%-12d \n",sayi);//istenen sayi icin 12 karakterlik yer ayirir, sola dayali yerlestirilir 44__________
     printf("%012d \n",sayi);//istenen sayi icin 12 karakterlik yer ayirir, saga dayali yerlestirilir 000000000044
-
+    /*
+    \n --> yeni satir
+    \b --> backspace (geriye dogru bosluk)
+    \f --> form feed (form besleme)
+    \r --> carriage return (satir basi)
+    \t --> horizontal tab (sekme)
+    \' --> tek tirnak karakteri
+    \0 --> null (bos)
+    */
+    printf("%s \b%s","Merhaba", "Nasilsin?");//ciktisi --> MerhabaNasilsin?
+    printf("%s\t\t\t%s", "Merhaba", "Nasilsin?");//Merhaba   Nasilsin? --> uc sekme kadar ilerler
+    printf("\n%s\\%s","Merhaba", "Nasilsin");//ciktisi --> Merhaba\Nasilsin?
+    printf("\n%s\"%s","Merhaba", "Nasilsin");//ciktisi --> Merhaba"Nasilsin?
+    printf("\n%s\%%%s", "Merhaba", "Nasilsin?");//ciktisi --> Merhaba%Nasilsin?
+    //*******
+    printf("%s\r%s", "Merhaba", "Deniz");//ciktisi --> Denizba
+    //--> \r satir basina getirirgetirildigi string kadar karakter tutar
+    //*******
+    scanf("%format_dizgini", &girdi_listesi);//scanf kullanicidan bilgi alir
+    //& --> adres operatorudur, kullanici deger girdikten sonra enter'a basmalidir
+    int x;
+    double s;
+    scanf("%d%lf",&x,&s);
+    //ornek
+    int x; char ch;
+    scanf("%c%d",&ch&x);
+    //ornek program
+    int main(void)
+    {
+        int x,y;
+        double averaj;
+        printf("Iki tamsayi giriniz:");
+        scanf("%d%d",&x,&y);
+        averaj=(x+y)/2.0;
+        printf("Ortalama=%f",&averaj);
+        return 0;
+    }
+    //#include <math.h>
+    cos(x)//kosinuz
+    log(x)//logaritma
+    pow(x,y)//x uzeri y
+    sqrt(x)//x'in karekokunu hesaplar
     return 0;
 }
