@@ -128,7 +128,7 @@ int main()
         printf("Iki tamsayi giriniz:");
         scanf("%d%d",&x,&y);
         averaj=(x+y)/2.0;
-        printf("Ortalama=%f",&averaj);
+        printf("Ortalama=%f",averaj);
         return 0;
     }
     //#include <math.h>
