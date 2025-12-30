@@ -132,7 +132,7 @@ int main()
         return 0;
     }
     //#include <math.h>
-    cos(x)//kosinuz
+    cos(x)//kosinus
     log(x)//logaritma
     pow(x,y)//x uzeri y
     sqrt(x)//x'in karekokunu hesaplar
